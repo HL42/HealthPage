@@ -1,6 +1,7 @@
 import React from "react";
 import "./Files.css";
 import "./login.scss"
+import "./Admin.css";
 import App from "next/app";
 import Login from "./login";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"

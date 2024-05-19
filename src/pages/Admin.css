@@ -1,0 +1,9 @@
+.admin-content-container {
+  padding: 32px;
+  width: 100vw;
+  height: calc(100vh - 50px);
+}
+
+.intro {
+  margin: 16px;
+}

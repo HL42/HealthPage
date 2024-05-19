@@ -50,9 +50,8 @@ form{
     left: 35%;
     text-align: center;
     padding: 25px 70px;
-    background-color: #0D99FF;
+    background-color: rgb(61, 192, 61);
     color: aliceblue;
-    border: #0D99FF;
     border-radius: 30px;
     top: 200px;
     font-size: 25px;

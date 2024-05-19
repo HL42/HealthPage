@@ -1,4 +1,5 @@
 import React from "react";
+import "./login.scss"
 import App from "next/app";
 import Login from "./login";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"

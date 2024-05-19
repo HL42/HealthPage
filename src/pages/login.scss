@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    padding: 20px;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle {
+    z-index: 1;
+    filter: blur(2px);
+    position: absolute;
+    height: 115vh;
+    width: 100vw;
+    background-image: linear-gradient(to top right, transparent 50%, rgb(61, 192, 61) 0);
+}
+
+.modal {
+    z-index: 10;
+    margin-top: 20px;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 40px 10px rgba(109, 108, 108, 0);
+    box-shadow: 0px 0px 40px 10px rgb(0 0 0);
+    background-color: white;
+    display: flex;
+    flex-direction: vertical;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    margin: 10px 0;
+    width: 250px;
+}
+
+.textbox {
+    padding: 10px;
+}
+
+.login {
+    background-color: rgb(61, 192, 61);
+    border: none;
+    box-shadow: 2px 2px 10px 1px rgb(116, 116, 116);
+    padding: 20px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.signIn-header {
+    font-size: 54px;
+    margin-bottom: 30px;;
+    text-align: center;
+    font-family:  Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.title {
+    font-family:  Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; 
+}

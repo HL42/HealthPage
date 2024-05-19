@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    max-width: 100%;
+}
+
+.container{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #179ccc;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 19px;
+    text-decoration: none;
+  }
+
+  .pfp{
+    position: relative;
+    border-radius: 50%;
+    top: 8px;
+    right: -1180px
+  }
+
+  .sign{
+    position: relative;
+    right: -1170px;
+  }
+  
+  li a:hover {
+    background-color: #128fbd;
+  }
+
+  .intro{
+    text-align: center;
+    font-size: 70px;
+    animation: fadeInAnimation 2s ease;
+  }
+
+
+  .grid-container {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+    column-gap: 200px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 200px; 
+    height: 200px;
+    background-color: none;
+}
+
+.Add{
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #179ccc;
+    color: white;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Add:hover{
+    background-color: #128fbd;
+}
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes slide {
+    from {
+        transform: translateX(-100vw); /* Start off-screen to the left */
+    }
+    to {
+        transform: translateX(0); /* End at the original position */
+    }
+  }

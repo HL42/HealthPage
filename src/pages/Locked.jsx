@@ -1,27 +1,24 @@
-import "./Admin.module.css";
+import ListGroup from "./Hospital";
+import "./Locked.css";
+import blank from "./pfp.png";
 
-
-
-const Home = (props) => {
-  const {username, password} = props;
-
-  console.log(username, password);
+function Home() {
   return (
-    <>
+    <div className="content">
       <ul>
         <li>
           <a href="#home">Home</a>
         </li>
         <li>
-          <a href="Files.jsx">Files</a>
+          <a href="#news">Files</a>
         </li>
         <li>
           <a href="#contact" className="sign">
-            Sign Out
+            Sign In
           </a>
         </li>
         <li>
-          <img src= "./lebronpfp.jpg" width="34" height="34" className="pfp" />
+          <img src={blank} width="34" height="34" className="pfp" />
         </li>
       </ul>
       <h3 className="intro">DESCRIPTION</h3>
@@ -43,7 +40,7 @@ const Home = (props) => {
           mollit anim id est laborum.
         </p>
       </center>
-    </>
+    </div>
   );
 }
 

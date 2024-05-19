@@ -1,7 +1,5 @@
 import "./Admin.module.css";
 
-
-
 const Home = (props) => {
   const {username, password} = props;
 
@@ -10,22 +8,21 @@ const Home = (props) => {
     <>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="Files.jsx">Files</a>
+          <a href="/files">Files</a>
         </li>
         <li>
-          <a href="#contact" className="sign">
+          <a href="/admin" className="sign">
             Sign Out
           </a>
         </li>
         <li>
-          <img src= "./lebronpfp.jpg" width="34" height="34" className="pfp" />
+          <img src="/lebronpfp.jpg" width="34" height="34" className="pfp" />
         </li>
       </ul>
       <h3 className="intro">DESCRIPTION</h3>
-      <center>
         <p className="summary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -42,7 +39,6 @@ const Home = (props) => {
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.
         </p>
-      </center>
     </>
   );
 }

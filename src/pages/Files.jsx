@@ -1,40 +1,36 @@
-import ListGroup from "./Hospital";
-import "./Files.css";
-import lebron from "./lebronpfp.jpg";
-import images from "./images.png";
 import { useState } from "react";
 
-function Home() {
+const Files = () => {
   const squares = Array.from({ length: 6 }, (_, index) => (
     <div key={index} className="square">
-      <img src={images} className="square" />
+      <img src="/siloette.jpg" className="square" />
     </div>
   ));
 
   const clients = [
     {
       name: "Joe Schmoe",
-      img: images,
+      img: "/siloette.jpg",
     },
     {
       name: "Claire Smith",
-      img: images,
+      img: "/siloette.jpg",
     },
     {
       name: "Alex Attah",
-      img: images,
+      img: "/siloette.jpg",
     },
     {
       name: "Ryan Park",
-      img: images,
+      img: "/siloette.jpg",
     },
     {
       name: "Madeleine  Brady",
-      img: images,
+      img: "/siloette.jpg",
     },
     {
       name: "Julia Natalia",
-      img: images,
+      img: "/siloette.jpg",
     },
   ];
   const [person, setperson] = useState(clients);
@@ -42,18 +38,18 @@ function Home() {
     <div className="content">
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#news">Files</a>
+          <a href="/files">Files</a>
         </li>
         <li>
-          <a href="#contact" className="sign">
+          <a href="admin" className="sign">
             Sign Out
           </a>
         </li>
         <li>
-          <img src={lebron} width="34" height="34" className="pfp" />
+          <img src="/lebronpfp.jpg" width="34" height="34" className="pfp" />
         </li>
       </ul>
       <h3 className="intro">FILES</h3>
@@ -87,4 +83,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Files;

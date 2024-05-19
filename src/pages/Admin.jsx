@@ -8,7 +8,7 @@ const Home = (props) => {
     <>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <a href="/Home">Home</a>
         </li>
         <li>
           <a href="/files">Files</a>

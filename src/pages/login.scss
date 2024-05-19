@@ -56,6 +56,10 @@
     color: white;
     margin-top: 80px;
     width: 100%;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .signIn-header {

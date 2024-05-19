@@ -11,7 +11,7 @@ export default function Login() {
 
     // replace the below hard coded values with OAuth
     if (username === "alex" && password === "password") {
-      router.push('/admin');
+      router.push('/Home');
     }
   }
 
@@ -45,7 +45,7 @@ export default function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <input className="login form-content" type="submit" value="Sign In" onClick={handleSubmit}/>
+            <button className="login form-content" onClick={handleSubmit}>Sign In</button>
           </form>
         </div>
       </div>

@@ -21,8 +21,9 @@ const MyApp = ({ Component, pageProps }) => {
       <Router>
           <Routes>
             <Route path="/admin" element={<Login {...pageProps} />} />
-          <Route path="/" element={<Home {...pageProps}/>} />
+            <Route path="/Home" element={<Home {...pageProps}/>} />
           <Route path="/files" element={<Files {...pageProps} />} />
+          <Route path="/" element={<Home {...pageProps}/>} />
         </Routes>
       </Router>
     </React.StrictMode>)

@@ -1,12 +1,22 @@
-import Image from 'next/image';
+import React, { useEffect } from "react";
+import ReactDOM from "react-dom";
+import App from "./_app";
 
-import NearLogo from '/public/near.svg';
-import NextLogo from '/public/next.svg';
-import styles from '@/styles/app.module.css';
+const IndexPage = () => {
+  useEffect(() => {
+    // This code will only run on the client-side
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    );
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-    </main>
-  );
-}
+    return () => {
+    };
+  }, []);
+
+  return null;
+};
+
+export default IndexPage;

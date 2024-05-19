@@ -1,8 +1,11 @@
-import ListGroup from "./Hospital";
-import "./Home.css";
-import lebron from "./lebronpfp.jpg";
+import "./Admin.module.css";
 
-function Home() {
+
+
+const Home = (props) => {
+  const {username, password} = props;
+
+  console.log(username, password);
   return (
     <>
       <ul>
@@ -18,7 +21,7 @@ function Home() {
           </a>
         </li>
         <li>
-          <img src={lebron} width="34" height="34" className="pfp" />
+          <img src= "./lebronpfp.jpg" width="34" height="34" className="pfp" />
         </li>
       </ul>
       <h3 className="intro">DESCRIPTION</h3>

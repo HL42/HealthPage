@@ -1,0 +1,59 @@
+/* *{margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+} */
+
+.container{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.pfp{
+  position: relative;
+  border-radius: 50%;
+  top: 8px;
+  right: -1190px
+}
+
+.sign{
+  position: relative;
+  right: -1170px;
+}
+
+.intro{
+  text-align: center;
+  font-size: 70px;
+  animation: fadeInAnimation 2s ease;
+}
+
+.summary{
+  position: relative;
+  top: 30px;
+  font-size: 20px;
+  display: flex;
+  align-content: center;
+  width: 700px;
+  overflow-wrap: break-word;
+  animation: fadeInAnimation 2s ease;
+  animation: slide 1.5s ease;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(-100vw); /* Start off-screen to the left */
+  }
+  to {
+      transform: translateX(0); /* End at the original position */
+  }
+}
